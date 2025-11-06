@@ -1,0 +1,28 @@
+/* Minimal additions on top of AdminUpload.css */
+
+.mp-head { margin-bottom: 10px; }
+.mp-filters { display:flex; gap:10px; width:100%; max-width: 520px; }
+.mp-input{
+  border:1px solid var(--border); border-radius:10px; padding:10px 12px; background:#fff;
+  font-size:14px; color:var(--text); min-width: 0; /* let it shrink */
+}
+.mp-input:focus{ outline:none; border-color:#c7d2fe; box-shadow:0 0 0 3px #eef2ff; }
+
+.mp-ref{ display:flex; align-items:center; gap:8px; }
+.mp-copy{ border:0; padding:0; background:none; cursor:pointer; }
+
+.mp-foot{
+  margin-top:12px; display:flex; align-items:center; justify-content:space-between; gap:12px;
+}
+
+/* skeleton */
+.mp-skel-bar{
+  height:12px; width:100%; background:linear-gradient(90deg, #f3f4f6, #e5e7eb, #f3f4f6);
+  background-size:200% 100%; border-radius:8px; animation: mp-shine 1.2s infinite linear;
+}
+.mp-skel-bar.short{ width:70%; }
+.mp-skel-chip{
+  height:24px; width:86px; border-radius:999px; background:linear-gradient(90deg, #f3f4f6, #e5e7eb, #f3f4f6);
+  background-size:200% 100%; animation: mp-shine 1.2s infinite linear;
+}
+@keyframes mp-shine { from{ background-position: 0% 0 } to{ background-position: -200% 0 } }
